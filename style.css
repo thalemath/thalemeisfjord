@@ -1,0 +1,799 @@
+body{
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	cursor: url('bilder/cursor.png'), auto;
+}
+
+a {
+	cursor: url('bilder/pointer.png'), pointer;
+}
+
+button {
+	cursor: url('bilder/pointer.png'), pointer;
+}
+
+
+
+
+a:visited{
+	color: #272727;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.header a:hover{
+	text-decoration: underline;
+}
+
+.inter12pt{
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #272727;
+}
+
+.inter10pt{
+	font-family: 'Inter', sans-serif;
+	font-size: 10pt;
+	color: #272727;
+}
+
+.interIngress{
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+	font-size: 2vw;
+	text-justify: left;
+}
+
+.uppercase{
+		text-transform: uppercase;
+}
+
+.indexGalleriElement.border{
+	border-top: solid;
+	border-left: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.backgroundColor{
+	background-color: floralwhite;
+}
+
+
+button:hover{
+	text-decoration: underline;
+}
+
+.plassertUnderHeader{
+	position: absolute;
+	top: 3.9em;
+}
+
+/*________HEADER________*/
+
+.header{
+	position: fixed;
+	position: 0 0;
+	height: 3.9em;
+	width: 100%;
+	z-index: 1000;
+}
+
+.header.border{
+	border-bottom: solid;
+	border-width: thin;
+	border-color: black;	
+}
+
+.hjemknapp{
+	display: inline;
+	border: none;
+	position: relative;
+	text-align: left;
+	left: 5px;
+	margin: 0;
+  height: 0;
+  padding: 0;
+  float: left;
+  line-height: normal;
+  box-shadow: none;
+  vertical-align: top;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerHoyremenyKnapp{
+	display: inline;
+	border: none;
+	right: 0;
+	text-align: right;
+	margin: 0;
+  height: 0;
+  padding: 0;
+  float: right;
+  line-height: normal;
+  box-shadow: none;
+}
+
+
+.headerHoyremenyKnapp.instagramKnapp{
+	position: relative;
+	right: 5px;
+}
+
+.headerHoyremenyKnapp.informasjonKnapp{
+	position: relative;
+	right: 5px;
+	top: 22px;
+}
+
+.headerHoyremenyKnapp.arbeiderKnapp{
+	position: relative;
+	right: 5px;
+	top: 42px;
+}
+
+.HeaderToppMargin{
+	top: 3px;
+}
+
+/*________SIDEPANEL________*/
+
+.sidepanel{
+	position: fixed;
+	left: 0;
+	width: 300px;
+	height: calc(100vh - 7vh);
+  overflow: scroll;
+  opacity: 1;
+  z-index: 999;
+  display: none;
+  overflow-x: none;
+}
+
+.synlig{
+	display: block;
+}
+
+.sidepanel::-webkit-scrollbar{ /*skjuler scrollbar*/
+	display: none;
+}
+
+.sidepanelElement{
+	display: block;
+	padding: 5px;
+	height: 12.5%;
+	position: relative;
+	overflow-x: none;
+}
+
+.overskriftSidepanelElement{
+	font-weight: bolder;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+
+.underoverskriftSidepanelElement{
+	font-size: 10pt;
+	font-style: italic;
+	line-height: 1.5;
+	text-transform: none;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidepanelElementBorder{
+	border-bottom: solid;
+	border-width: thin;
+	border-color: black;
+}	
+
+.sidepanelElementTodelt{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	bottom: 5px;
+	justify-content: space-between;
+}
+
+.sidepanelElementTodelt.tags{
+	position: absolute;
+	left: 5px;
+	color: #272727;
+}
+
+.sidepanelElementTodelt.aarstall{
+	position: absolute;
+	right: 5px;
+}
+
+/*________INDEXGALLERI________*/
+
+
+.indexGalleri{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.indexGalleriElement{
+	width: 100%;
+}
+
+.indexGalleriElement .bilde{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*________PROSJEKTSIDE________*/
+
+.prosjekt{
+	position: absolute;
+	display: block;
+	top: 3.9em;	
+	width: 100%;
+}
+
+.overskriftIngress{
+	display: inline;
+	position: relative;
+	width: auto;
+	max-height: 1.5em;
+	font-family: 'Inter', sans-serif;
+	font-weight: bolder;
+	font-size: 2.5vwpt;
+	text-justify: left;
+	text-decoration: underline;
+	text-transform: uppercase;
+	float: left;
+	background-color: inherit;
+	margin-bottom: 20px;
+	padding: 50px 0 50px 50;
+}
+
+.ingress{
+	min-width: 12em;
+	max-width: 30em;
+	margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	position: relative;
+	float: left;
+	color: black;
+	height: 100%;	
+	padding: 50px 10px 50px 50px;
+	z-index: 1;
+	position: relative;
+}
+
+.ingressmyetekst{
+	min-width: 12em;
+	max-width: 90em;
+	margin-bottom: 4em;
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	position: relative;
+	float: left;
+	color: black;
+	height: 12em;	
+	padding: 60px 10px 50px 50px;
+	z-index: 1;
+	position: relative;
+}
+
+
+
+.ingress .p{
+	padding: 10px 0 0px 0;
+
+}
+
+.ingresstodelt{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.ingresstodelt .h{
+	padding-left: 20px;
+}
+
+.ingresslink{
+	display: inline;
+	position: relative;
+	top: 10px;
+	color: gray;
+}
+
+.spaceAbove{
+	margin-top: 10px;
+}
+
+.prosjekt a:hover{
+	text-decoration: underline;
+}
+
+
+.borderTop{
+	border-top: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.borderLeft{
+	border-left: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.borderRight{
+	border-right: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.borderBottom{
+	border-bottom: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.borders{
+	border-color: black;
+	border-width: thin;
+	border: solid;
+}
+
+.heldekkendebilde img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: -5px;
+	border-top: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.todeltbilde{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+
+.tredeltbilde{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 100%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+.tredeltbilde img{
+	width: 100%;
+	height: auto;
+}
+
+.venstre img{
+	display: block;
+	font-size: 0px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.hoyre img{
+	font-size: 0px;
+	display: block;
+	position: relative;
+	float: right;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0;
+	object-fit: fill;
+}
+
+.galleri {
+	z-index: 2;
+
+}
+
+.spaceBelow{
+	padding-bottom: 20px;
+}
+
+.prosjektStortekst{
+	display: inline;
+	position: relative;
+	font-family: 'Inter', sans-serif;
+	font-weight: bolder;
+	font-size: 3vw;
+	text-justify: left;
+	float: left;
+	background-color: inherit;
+	align-content: center;
+	padding: 50px;
+	max-width: 100%;
+}
+
+.prosjektmeta{
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	padding: 50px 0px 50px 50px;
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+	font-size: 12pt;
+	float: left;
+	color: black;
+	height: 100%;
+	
+}
+
+.prosjektmeta .h{
+	display: block;
+	position: relative;
+	margin-left: 10px;
+}
+
+
+.prosjektmeta .v{
+	display: block;
+	position: relative;
+	margin-right: 10px;
+}
+
+.prosjektmeta .heading{
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: black;
+}
+
+.prosjektmeta.tredelt{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	position: relative;
+}
+
+.kreditering{
+	display: block;
+	position: relative;
+	max-width: 80%;
+	padding: 50px 0 0 0px;
+	height: auto;
+	top: 250px;
+
+}
+
+.wheredowemeetMeta{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.noborder{
+	border: none;
+}
+
+/*________NESTEPROSJEKT________*/
+
+.internprosjektnavigasjon{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: space-between;
+	min-height: 50px;
+	max-height: 100px;
+	width: 100%;
+	margin-bottom: 30px;
+	
+}
+
+.white{
+	color: white;
+}
+
+
+/* Tooltip container = bildet som kommer opp når man hoverer over intern navigasjon (forrige/neste)*/
+.tooltip {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+ }
+
+ .tooltip.h{
+ 	position: absolute;
+ 	right: 30px;
+ 	float: right;
+ }
+
+ .tooltip.v{
+ 	position: absolute;
+ 	left: 30px;
+ }
+
+
+/* Tooltip text bildet som kommer opp*/
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  height: auto;
+ 
+  /* Position the tooltip text*/
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.internprosjektnavigasjontypografi{
+	font-family: 'Inter', sans-serif;
+	color: #272727;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+
+.ingenLinjeskift{
+	white-space: nowrap;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.grey{
+	color: grey;
+}
+
+/*________INFORMASJON________*/
+
+.informasjon{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	hyphens: auto;
+	position: relative;
+	top:;
+	max-width: 80vw;
+	height: 400px;
+	padding: 50px;
+}
+
+.informasjonBackground{
+
+background-color: black;	color: white;
+
+}
+
+.omMeg{
+position: relative;
+padding: 50px;
+max-width: 100vw;
+}
+
+.hoverbildeInfo{
+	color: white;
+}
+
+
+.informasjonsbilde{
+	width: 100%;
+	height: auto;
+}
+
+.informasjonFlex{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.adaptivtypo{
+	font-size: 3vw;
+	font-weight: bolder;
+}
+
+.nedoverpilInfoside{
+	display: block;
+	position: relative;
+	top: 20em;
+	left: 20em;
+	align-content: center;
+}
+
+.informasjonshover{
+  display: inline-block;
+}
+
+
+/* Tooltip text bildet som kommer opp*/
+.informasjonshover .hover {
+  visibility: hidden;
+  width: 500px;
+  height: auto;
+ 
+  /* Position the tooltip text*/
+  position: absolute;
+  z-index: 1;
+
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.informasjonshover:hover .hover {
+  visibility: visible;
+}
+
+
+
+
+
+/*________PROSJEKTFARGER________*/
+
+.prosjektfargeVenndiagram{
+	color: #8A9D42;
+}
+
+.prosjektfargeYmt4{
+	color: #D89B4A;
+}
+
+.prosjektfargeClanofthecavebear{
+	color: #344397;
+}
+
+.prosjektfargeGoodnight{
+	color: #FE6868;
+}
+
+.prosjektfargeHot{
+	color: #E52516;
+}
+
+.prosjektfargeWheredowemeet{
+	color: #048934;
+}
+
+.prosjektfargeFolkandfables{
+	color: #DF3379;
+}
+
+.prosjektfargeHalvearbeidet{
+	color: #2F82FF;
+}
+
+
+
+@media only screen and (min-width: 800px){
+
+	.sidepanel{
+			width: 300px;
+			display: block;
+	}
+
+	.arbeiderKnapp{
+		display: none;
+	}
+
+	.indexGalleri{
+		margin-left: 300px;
+	}
+
+	.prosjekt{
+		margin-left: 300px;
+		width: calc(100% - 301px);
+		top: 3.9em;
+	}
+
+.prosjektStortekst{
+	display: block;
+	
+	padding: 100px;
+	
+}
+
+.prosjektmeta .h{
+	display: block;
+	position: absolute;
+	left: 500px;
+	width: 250px;
+	height: auto;
+	top: 50px;
+}
+
+.internprosjektnavigasjontypografi{
+	font-size: 20pt;
+	font-weight: normal;
+	}
+
+
+.ingress{
+	grid-template-columns: 4fr 1fr;
+
+}
+
+
+
+.ingressmyetekst{
+	min-width: 12em;
+	max-width: 80em;
+	margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	position: relative;
+	float: left;
+	color: black;
+	
+	max-height: 12em;	
+	padding: 50px 10px 50px 50px;
+	z-index: 1;
+	position: relative;
+}
+
+.overskriftIngress{
+	margin-bottom: 10px;
+}
+
+.prosjektmeta .h{
+	display: block;
+	position: absolute;
+	left: 300px;
+	padding-left: 20px;
+	max-width: 250px;
+	min-width: 150px;
+	height: auto;
+	top: 50px;
+}
+
+.informasjonsbilde{
+	width: 50%;
+	height: auto;
+	margin-right: 80%;
+}
+
+.informasjon{
+	padding: 50px 100px 50px 350px;
+}
+
+.omMeg{
+padding: 50px 100px 50px 350px;
+
+}
+
+}
+
